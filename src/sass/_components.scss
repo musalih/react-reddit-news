@@ -1,0 +1,181 @@
+.card {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  transition: all .2s;
+  font-size: 1.4rem;
+
+  &:hover {
+    transform: translateY(-.2rem) scale(1.0);
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+  }
+  &__top {
+    text-align: center;
+    position: relative;
+    color: #999;
+    padding: 2.5rem;
+  }
+
+  &__subreddit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__score {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+  &__img {
+    height: 20rem;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #999;
+      display: inline-block;
+      padding: 4px;
+      border-radius: 2px;
+      transition: all .2s;
+      background-size: 250%;
+      box-shadow: .1rem .2rem 1rem rgba(#000, .2);
+    }
+
+    &:hover {
+      background-color: #ff6314;
+      color: #fff;
+    }
+
+  }
+  &__bottom {
+    position: relative;
+  }
+  &__author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #999;
+  }
+
+}
+
+.form {
+  &__group {
+    padding: 2rem;
+    position: relative;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(#fff, .5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: inline-block;
+    transition: all .3s;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, .1);
+      border-bottom: 3px solid #ff6314;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #d7d7d7;
+    }
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 4.5rem;
+    display: block;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    color: #999;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden; //element will be gone from page
+    transform: translateY(4rem);
+  }
+  &__button {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all .2s;
+      font-size: 1.6rem;
+      //change for the <button> element
+      border: none;
+      cursor: pointer;
+      background-color: #ff6314;
+      color: #ffffff;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba(#000, 0.2);
+    }
+  }
+}
+
+.search {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  &__section {
+    background-color: rgba(#fff,0.8);
+    //background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 50%, transparent 50%),url(../img/nat-10.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .2);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  &__heading {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__error {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+    color: #ff7730;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  }
+}
+
+.news {
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+}

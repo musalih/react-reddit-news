@@ -1,0 +1,17 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 0;
+  background-color: #ff6314;
+  box-shadow: 0 .5rem 2rem rgba(#000, .5);
+
+  &__brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1rem;
+  }
+}
